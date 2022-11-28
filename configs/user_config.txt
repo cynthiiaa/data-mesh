@@ -1,0 +1,2 @@
+user
+name,age,country,language,member_since,next_billing_period,card_type
