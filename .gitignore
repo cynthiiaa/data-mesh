@@ -3,3 +3,5 @@ batect.yml
 batect
 notmain.py
 env/
+READ_THIS.md
+__pycache__/
