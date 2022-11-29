@@ -15,7 +15,7 @@ main.register_data_product(name="DataProductTest1",
 
 data_products_attributes2 = {
     "Created_By": "Inner Insight",
-    "Functionality": "EDA",
+    "Functionality": "Exploratory Data Analysis",
     "Creation_Date": "02-01-2089",
     "ID": 86,
     "Department": "DC Analytics",

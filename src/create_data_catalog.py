@@ -2,7 +2,7 @@ import main
 
 # creating empty data catalog
 headers = ["Name", "Location", "Created_By", "ID",
-           "Department", "Creation_Date", "Functionality", "Schema"]
+           "Department", "Creation_Date", "Schema", "Functionality"]
 folder = ""
 filename = "data_catalog.csv"
 main.write_csv_header(headers, folder, filename)
