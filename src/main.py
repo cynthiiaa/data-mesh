@@ -38,7 +38,7 @@ def register_data_product(name="empty_data_product", attributes={}):
     print(f"Registering {name} CSV port...")
     locate_csv = register_csv_port(name)
 
-    data_product_row = [name, locate_csv, attributes["Created_By"],
+    data_product_row = [name, locate_csv, attributes["Created_By"], attributes["ID"], attributes["Creation_Date"],
                         attributes["Department"], attributes["Schema"], attributes["Functionality"]]
     add_rows("", DATA_CATALOG_LOC, data_product_row)
 
