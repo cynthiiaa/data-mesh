@@ -5,3 +5,4 @@ notmain.py
 env/
 READ_THIS.md
 __pycache__/
+.batect/

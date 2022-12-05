@@ -1,8 +1,10 @@
 import csv
 import sys
+import pandas as pd
 import fire
 
-DATA_CATALOG_LOC = "data_catalog.csv"
+DATA_CATALOG_LOC = "./data_catalog.csv"
+DATA_PRODUCTS = []
 
 #------------------- Helper Functions for File Parsing -------------------#
 
@@ -43,5 +45,34 @@ def register_data_product(name="empty_data_product", attributes={}):
     add_rows("", DATA_CATALOG_LOC, data_product_row)
 
 
+#------------------- Access Data Products  -------------------#
+def list_data_products():
+    with open(DATA_CATALOG_LOC, 'r') as f:
+        next(f)
+        lines = f.readlines()
+        print(f"There are {len(lines)} Data Products:\n")
+        for line in lines:
+            print(line)
+
+
+def get_data_product_location(data_product_name):
+    with open(DATA_CATALOG_LOC, 'r') as f:
+        next(f)
+        csv_file = csv.reader(f)
+        data_products = {}
+        locations = {}
+
+        for entry in csv_file:
+            locations["location_csv"] = entry[1]
+            data_products[entry[0]] = locations
+
+    return data_products[data_product_name]
+
+
+def load_data(data_product_name):
+    locs = get_data_product_location(data_product_name)
+    return pd.read_csv(locs["location_csv"], header=0)
+
+
 if __name__ == "__main__":
-    fire.Fire(register_data_product)
+    fire.Fire(load_data)

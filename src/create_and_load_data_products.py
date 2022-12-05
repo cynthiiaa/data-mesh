@@ -9,9 +9,6 @@ data_products_attributes = {
     "Department": "SF Analytics",
     "Schema": '{"data_created": "01-01-1999", "attribute1": True, "attribute2": 500}'
 }
-main.register_data_product(name="DataProductTest1",
-                           attributes=data_products_attributes)
-
 
 data_products_attributes2 = {
     "Created_By": "Inner Insight",
@@ -21,5 +18,17 @@ data_products_attributes2 = {
     "Department": "DC Analytics",
     "Schema": '{"data_created": "01-01-2012", "attribute1": False, "attribute2": 9001}'
 }
+
+main.register_data_product(name="DataProductTest1",
+                           attributes=data_products_attributes)
 main.register_data_product(name="DataProductTest2",
                            attributes=data_products_attributes2)
+
+
+# Listing all data products
+print("Listing all our data products")
+main.list_data_products()
+
+##
+df1 = main.load_data("DataProductTest1")
+df2 = main.load_data("DataProductTest2")

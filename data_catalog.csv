@@ -1,4 +1,5 @@
 Name,Location,Created_By,ID,Department,Creation_Date,Schema,Functionality
-Machine Learning Data 4,data/document1.csv,Team Data Discoverers,28,SF Analytics,04-23-2022,"{'data_created': '01-01-1999', 'attribute1': True, 'attribute2': 500}",Sentiment Analysis
+Machine Learning Data 4,data/document1.csv,Team Data Discoverers,28,SF Analytics,04-23-2022,"{'data_created': '01-01-1999', 'attribute1': True, 'attribute2': 500}",Sentiment AnalysisDataProductTest1,data/DataProductTest1.csv,Team Data Discoverers,0,SF Analytics,12-25-2022,"{""data_created"": ""01-01-1999"", ""attribute1"": True, ""attribute2"": 500}",Sentiment Analysis 6
+DataProductTest2,data/DataProductTest2.csv,Inner Insight,86,DC Analytics,02-01-2089,"{""data_created"": ""01-01-2012"", ""attribute1"": False, ""attribute2"": 9001}",Exploratory Data Analysis
 DataProductTest1,data/DataProductTest1.csv,Team Data Discoverers,0,SF Analytics,12-25-2022,"{""data_created"": ""01-01-1999"", ""attribute1"": True, ""attribute2"": 500}",Sentiment Analysis 6
 DataProductTest2,data/DataProductTest2.csv,Inner Insight,86,DC Analytics,02-01-2089,"{""data_created"": ""01-01-2012"", ""attribute1"": False, ""attribute2"": 9001}",Exploratory Data Analysis
